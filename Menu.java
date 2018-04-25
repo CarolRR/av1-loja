@@ -43,7 +43,7 @@ public class Menu {
 					System.out.println("Opção inválida.");
 				}
 			} catch (Exception e) {
-				e.printStackTrace();
+//				e.printStackTrace();
 				System.out.println("Opção inválida.");
 			}
 		}

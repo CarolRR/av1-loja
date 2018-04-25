@@ -35,8 +35,8 @@ public class ReadCSV {
 			return productsList;
 			
 		}catch(FileNotFoundException e) {
-			e.printStackTrace();
-			return null;
+//			e.printStackTrace();
+			return new ArrayList();
 		}
 	}
 	
@@ -70,8 +70,8 @@ public class ReadCSV {
 			return customerList;
 			
 		}catch(FileNotFoundException e) {
-			e.printStackTrace();
-			return null;
+//			e.printStackTrace();
+			return new ArrayList();
 		}
 	}
 }

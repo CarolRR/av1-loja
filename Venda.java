@@ -96,19 +96,20 @@ public class Venda {
 			}
 		}
 		
-		System.out.println("====Recibo====");
+		System.out.println("=======Recibo=======");
 		System.out.println(dadosDeCompra.printDateTime());
 		System.out.println("Nome do cliente: " + dadosDeCompra.getCustomerSale().getName());
 		System.out.println("Operador de caixa: " + dadosDeCompra.getCashierName());
 		System.out.println("--Produtos--");
 		for (int i = 0; i < dadosDeCompra.getSaleProducts().size(); i++) {
 			Products p = (Products)dadosDeCompra.getSaleProducts().get(i);
-			System.out.println("- " + p.getSaleQnt() + " " + p.getProductName() + "\t\t R$" + p.getUnitValue());
+			System.out.println(p.getSaleQnt() + "x " + p.getProductName() + "\t\t R$" + p.getUnitValue());
 		}
-		System.out.println("------------");
+		System.out.println("--------------------");
 		System.out.println("Valor total: R$ " + valorTotal);
+		System.out.println("--------------------");
 		System.out.println("Forma(s) de pagamento: \n" + dadosDeCompra.getFormaDePagamento());
-		System.out.println("==============");
+		System.out.println("====================");
 	}
 	
 }
